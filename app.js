@@ -7,7 +7,7 @@ const PORT = 3000
 
 // envirment load?
 require('dotenv').config();
-
+app.use(express.json()); 
 // connect mongodb
 const connectDB = require('./config/connectDB');
 
